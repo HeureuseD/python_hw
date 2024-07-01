@@ -28,11 +28,11 @@ def updown(num):
 updown(num)
 retry = input("다시 하시겠습니까? (y/n): ")
 while True:
-    if retry == 'y':
+    if retry.lower() == 'y':
         updown(num)
         retry = input("다시 하시겠습니까? (y/n): ")
         count = 0
-    elif retry == 'n':
+    elif retry.lower() == 'n':
         print("게임을 종료합니다")
         break
     else:
