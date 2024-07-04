@@ -27,8 +27,8 @@ def game():
                 print("게임을 종료합니다")
                 print(f"승: {win} 패: {lose} 무승부: {tie}")
                 break
-            elif retry.lower() != 'y' or retry.lower() != 'n':
-                print("유효한 입력이 아닙니다")    
+            elif retry.lower() == 'y':
+                continue   
         else:
             print("유효한 입력이 아닙니다")
 
